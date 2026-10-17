@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913"/>
+      <stop offset="50%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#070B16"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ADD8"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="emeraldGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#0B0F19" stop-opacity="0.96"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-width="0.7" stroke-opacity="0.55"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif; }
+      .pulse-dot { animation: pulse 2.2s infinite ease-in-out; }
+      .flow-line { stroke-dasharray: 8 6; animation: dash 12s linear infinite; }
+      .cursor { animation: blink 1.1s step-end infinite; }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.35; }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -280; }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background & Precision Grid -->
+  <rect width="1200" height="420" rx="18" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.5"/>
+  <rect width="1200" height="420" rx="18" fill="url(#grid)"/>
+
+  <!-- Ambient Top Accent Bar -->
+  <rect x="0" y="0" width="1200" height="4" rx="2" fill="url(#cyanGlow)"/>
+
+  <!-- Top Telemetry Header Bar -->
+  <rect x="28" y="24" width="1144" height="38" rx="8" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+  <circle cx="50" cy="43" r="5" fill="#EF4444"/>
+  <circle cx="68" cy="43" r="5" fill="#F59E0B"/>
+  <circle cx="86" cy="43" r="5" fill="#10B981"/>
+  <text x="112" y="48" class="mono" font-size="12" fill="#94A3B8">wahyunoerr@darwin-arm64:~/architecture-telemetry — zsh</text>
+
+  <!-- Live Status Pill -->
+  <rect x="935" y="31" width="222" height="24" rx="12" fill="#064E3B" fill-opacity="0.45" stroke="#10B981" stroke-width="1"/>
+  <circle cx="951" cy="43" r="4" fill="#10B981" class="pulse-dot"/>
+  <text x="964" y="47" class="mono" font-size="11" font-weight="600" fill="#34D399">SYSTEMS ONLINE · MCP v2.4.1</text>
+
+  <!-- Left Column: Identity & Architectural Manifesto -->
+  <text x="44" y="108" class="mono" font-size="13" font-weight="600" fill="#38BDF8" letter-spacing="2">PRINCIPAL SYSTEMS &amp; AGENTIC TOOLING ARCHITECT</text>
+  <text x="44" y="158" class="sans" font-size="44" font-weight="800" fill="#F8FAFC" letter-spacing="-1">Wahyu Nur</text>
+  <text x="305" y="158" class="mono" font-size="22" font-weight="500" fill="#64748B">@wahyunoerr</text>
+
+  <text x="44" y="196" class="sans" font-size="15.5" fill="#CBD5E1">
+    Engineering deterministic AI developer tooling, zero-dependency Model Context Protocol
+  </text>
+  <text x="44" y="218" class="sans" font-size="15.5" fill="#CBD5E1">
+    (MCP) engines in Go, and high-concurrency multi-tenant enterprise platforms.
+  </text>
+
+  <!-- Key Engineering Metrics Strip -->
+  <g transform="translate(44, 246)">
+    <rect x="0" y="0" width="160" height="68" rx="10" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1.2"/>
+    <text x="16" y="26" class="mono" font-size="11" fill="#64748B">MCP COLD BOOT</text>
+    <text x="16" y="52" class="mono" font-size="22" font-weight="700" fill="#38BDF8">3.9 ms</text>
+
+    <rect x="174" y="0" width="160" height="68" rx="10" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1.2"/>
+    <text x="190" y="26" class="mono" font-size="11" fill="#64748B">NATIVE MCP TOOLS</text>
+    <text x="190" y="52" class="mono" font-size="22" font-weight="700" fill="#10B981">21 Tools</text>
+
+    <rect x="348" y="0" width="160" height="68" rx="10" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1.2"/>
+    <text x="364" y="26" class="mono" font-size="11" fill="#64748B">EXTERNAL DEPS</text>
+    <text x="364" y="52" class="mono" font-size="22" font-weight="700" fill="#A855F7">0 (Stdlib)</text>
+
+    <rect x="522" y="0" width="160" height="68" rx="10" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1.2"/>
+    <text x="538" y="26" class="mono" font-size="11" fill="#64748B">PEAK MEMORY</text>
+    <text x="538" y="52" class="mono" font-size="22" font-weight="700" fill="#F59E0B">~6.0 MB</text>
+  </g>
+
+  <!-- Bottom Domain Tags -->
+  <g transform="translate(44, 336)">
+    <rect x="0" y="0" width="136" height="30" rx="6" fill="#0F172A" stroke="#0284C7" stroke-width="1"/>
+    <text x="68" y="19" text-anchor="middle" class="mono" font-size="11.5" font-weight="600" fill="#38BDF8">Go AST &amp; MCP</text>
+
+    <rect x="148" y="0" width="172" height="30" rx="6" fill="#0F172A" stroke="#DC2626" stroke-width="1"/>
+    <text x="234" y="19" text-anchor="middle" class="mono" font-size="11.5" font-weight="600" fill="#F87171">Laravel 13 + Octane</text>
+
+    <rect x="332" y="0" width="154" height="30" rx="6" fill="#0F172A" stroke="#10B981" stroke-width="1"/>
+    <text x="409" y="19" text-anchor="middle" class="mono" font-size="11.5" font-weight="600" fill="#34D399">Vue 3 + Inertia</text>
+
+    <rect x="498" y="0" width="184" height="30" rx="6" fill="#0F172A" stroke="#8B5CF6" stroke-width="1"/>
+    <text x="590" y="19" text-anchor="middle" class="mono" font-size="11.5" font-weight="600" fill="#C084FC">Multi-Tenant Security</text>
+  </g>
+
+  <!-- Right Column: Live Animated MCP & AST Pipeline Telemetry Panel -->
+  <g transform="translate(756, 82)">
+    <rect x="0" y="0" width="416" height="304" rx="12" fill="#090D16" stroke="#1E293B" stroke-width="1.5"/>
+    <rect x="0" y="0" width="416" height="32" rx="12" fill="#111827"/>
+    <text x="16" y="21" class="mono" font-size="11.5" font-weight="600" fill="#94A3B8">LIVE ENGINE INSPECTOR // go-boost mcp</text>
+    <circle cx="394" cy="16" r="4" fill="#38BDF8" class="pulse-dot"/>
+
+    <text x="18" y="58" class="mono" font-size="12" fill="#38BDF8">$ go tool go-boost status</text>
+    <text x="18" y="80" class="mono" font-size="11.5" fill="#94A3B8">├─ Protocol   : <tspan fill="#F8FAFC">JSON-RPC 2.0 (stdio)</tspan></text>
+    <text x="18" y="100" class="mono" font-size="11.5" fill="#94A3B8">├─ AST Engine : <tspan fill="#34D399">go/parser · go/ast · go/token</tspan></text>
+    <text x="18" y="120" class="mono" font-size="11.5" fill="#94A3B8">├─ Concurrency: <tspan fill="#34D399">0 race / 0 leaked ctx</tspan></text>
+    <text x="18" y="140" class="mono" font-size="11.5" fill="#94A3B8">├─ DB Guard   : <tspan fill="#38BDF8">Read-Only DSN + Row Cap</tspan></text>
+    <text x="18" y="160" class="mono" font-size="11.5" fill="#94A3B8">└─ Security   : <tspan fill="#10B981">SARIF 2.1.0 · 100/100 Pass</tspan></text>
+
+    <!-- Animated Circuit Graph Inside Telemetry Box -->
+    <line x1="36" y1="205" x2="380" y2="205" stroke="#1E293B" stroke-width="2"/>
+    <line x1="36" y1="205" x2="380" y2="205" stroke="url(#cyanGlow)" stroke-width="2" class="flow-line"/>
+
+    <g transform="translate(24, 186)">
+      <rect x="0" y="0" width="94" height="38" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="1.2"/>
+      <text x="47" y="17" text-anchor="middle" class="mono" font-size="10" font-weight="700" fill="#38BDF8">AI AGENT</text>
+      <text x="47" y="30" text-anchor="middle" class="mono" font-size="9" fill="#94A3B8">Claude/Cursor</text>
+    </g>
+
+    <g transform="translate(161, 186)">
+      <rect x="0" y="0" width="94" height="38" rx="8" fill="#0F172A" stroke="#10B981" stroke-width="1.2"/>
+      <text x="47" y="17" text-anchor="middle" class="mono" font-size="10" font-weight="700" fill="#34D399">GO-BOOST</text>
+      <text x="47" y="30" text-anchor="middle" class="mono" font-size="9" fill="#94A3B8">21 MCP Tools</text>
+    </g>
+
+    <g transform="translate(298, 186)">
+      <rect x="0" y="0" width="94" height="38" rx="8" fill="#0F172A" stroke="#818CF8" stroke-width="1.2"/>
+      <text x="47" y="17" text-anchor="middle" class="mono" font-size="10" font-weight="700" fill="#A5B4FC">STATIC AST</text>
+      <text x="47" y="30" text-anchor="middle" class="mono" font-size="9" fill="#94A3B8">Routes &amp; SQL</text>
+    </g>
+
+    <!-- Bottom Terminal Prompt with Blinking Cursor -->
+    <rect x="18" y="246" width="380" height="40" rx="6" fill="#060913" stroke="#1E293B" stroke-width="1"/>
+    <text x="30" y="271" class="mono" font-size="11.5" fill="#10B981">➜</text>
+    <text x="48" y="271" class="mono" font-size="11.5" fill="#E2E8F0">go test -race -count=1 ./... &amp;&amp; echo "PASS"</text>
+    <rect x="352" y="258" width="7" height="15" fill="#38BDF8" class="cursor"/>
+  </g>
+</svg>
