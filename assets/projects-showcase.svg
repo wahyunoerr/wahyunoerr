@@ -1,166 +1,186 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="100%" height="100%">
   <defs>
     <style>
       .font-display { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
       .font-sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
     </style>
-    <linearGradient id="bgSection" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0A0A0A"/>
-      <stop offset="100%" stop-color="#111111"/>
+    <linearGradient id="bgProj" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090C"/>
+      <stop offset="100%" stop-color="#101116"/>
     </linearGradient>
-    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="goldHeading" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#D4A574"/>
       <stop offset="50%" stop-color="#FCD34D"/>
       <stop offset="100%" stop-color="#D4A574"/>
     </linearGradient>
-    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#D4A574" stop-opacity="0.28"/>
+    <linearGradient id="cardEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A574" stop-opacity="0.34"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.06"/>
     </linearGradient>
   </defs>
 
-  <rect width="1200" height="620" rx="22" fill="url(#bgSection)"/>
-  <rect x="1" y="1" width="1198" height="618" rx="21" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1.2"/>
+  <rect width="1200" height="680" rx="22" fill="url(#bgProj)"/>
+  <rect x="1" y="1" width="1198" height="678" rx="21" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1.2"/>
 
   <!-- Section Header -->
-  <g transform="translate(48, 42)">
-    <rect x="0" y="0" width="142" height="26" rx="13" fill="#D4A574" fill-opacity="0.12" stroke="#D4A574" stroke-opacity="0.3"/>
-    <text x="18" y="17.5" fill="#FCD34D" font-size="11" font-weight="600" letter-spacing="0.8" class="font-sans">PORTFOLIO WORK</text>
-    <text x="0" y="64" fill="#FFFFFF" font-size="29" font-weight="700" class="font-display">Selected Production <tspan fill="url(#goldText)">Systems &amp; Platforms</tspan></text>
-    <text x="1104" y="60" text-anchor="end" fill="#A1A1AA" font-size="13" font-weight="400" class="font-sans">Scalable web applications engineered for real business operations.</text>
+  <g transform="translate(48, 38)">
+    <rect x="0" y="0" width="164" height="26" rx="13" fill="#D4A574" fill-opacity="0.12" stroke="#D4A574" stroke-opacity="0.32"/>
+    <text x="82" y="17" text-anchor="middle" fill="#FCD34D" font-size="10.5" font-weight="700" letter-spacing="0.7" class="font-sans">PRODUCTION SYSTEMS</text>
+    <text x="0" y="62" fill="#FFFFFF" font-size="28" font-weight="800" class="font-display">Enterprise Platforms <tspan fill="url(#goldHeading)">&amp; Client Solutions</tspan></text>
+    <text x="1104" y="58" text-anchor="end" fill="#94A3B8" font-size="13" font-weight="500" class="font-sans">Scalable web applications engineered for real business operations.</text>
   </g>
 
-  <!-- ROW 1 (Y = 132) -->
-  <!-- Project 1: Wutama Logistics System -->
-  <g transform="translate(48, 132)">
-    <rect width="352" height="216" rx="16" fill="#141414" stroke="url(#cardBorder)" stroke-width="1.2"/>
-    <rect x="20" y="20" width="118" height="24" rx="12" fill="#D4A574" fill-opacity="0.15"/>
-    <text x="32" y="36" fill="#FCD34D" font-size="10.5" font-weight="600" class="font-sans">Live Enterprise</text>
-    <text x="332" y="36" text-anchor="end" fill="#A1A1AA" font-size="11" font-weight="500" class="font-sans">wutama.my.id</text>
+  <!-- ROW 1 (Y = 124) -->
+  <!-- Card 1: Wutama Logistics System -->
+  <g transform="translate(48, 124)">
+    <rect width="352" height="246" rx="16" fill="#13141A" stroke="url(#cardEdge)" stroke-width="1.2"/>
+    <!-- Mini Visual Header Illustration -->
+    <rect x="16" y="16" width="320" height="54" rx="10" fill="#0B0C10" stroke="#FFFFFF" stroke-opacity="0.05"/>
+    <rect x="28" y="28" width="96" height="28" rx="6" fill="#D4A574" fill-opacity="0.15"/>
+    <text x="76" y="46" text-anchor="middle" fill="#FCD34D" font-size="10.5" font-weight="700" class="font-sans">Live Enterprise</text>
+    <!-- Route Nodes Graphic -->
+    <circle cx="158" cy="42" r="4" fill="#FCD34D"/>
+    <line x1="162" y1="42" x2="202" y2="42" stroke="#D4A574" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="206" cy="42" r="4" fill="#34D399"/>
+    <text x="322" y="46" text-anchor="end" fill="#94A3B8" font-size="11" font-weight="600" class="font-sans">wutama.my.id</text>
 
-    <text x="20" y="72" fill="#FFFFFF" font-size="19" font-weight="700" class="font-display">Wutama Logistics System</text>
-    <text x="20" y="98" fill="#A1A1AA" font-size="12.5" class="font-sans">
+    <text x="20" y="100" fill="#FFFFFF" font-size="19" font-weight="700" class="font-display">Wutama Logistics System</text>
+    <text x="20" y="126" fill="#A1A1AA" font-size="12.5" class="font-sans">
       <tspan x="20" dy="0">Complete shipping operations platform handling</tspan>
       <tspan x="20" dy="19">fleet tracking, supplier contracts, automated</tspan>
       <tspan x="20" dy="19">invoicing, billing collection, and P&amp;L analytics.</tspan>
     </text>
 
-    <g transform="translate(20, 168)">
-      <rect x="0" y="0" width="62" height="24" rx="6" fill="#1F1F22"/><text x="12" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Laravel</text>
-      <rect x="70" y="0" width="68" height="24" rx="6" fill="#1F1F22"/><text x="82" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Filament</text>
-      <rect x="146" y="0" width="58" height="24" rx="6" fill="#1F1F22"/><text x="158" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">MySQL</text>
-      <rect x="212" y="0" width="88" height="24" rx="6" fill="#1F1F22"/><text x="224" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Tailwind CSS</text>
+    <g transform="translate(20, 198)">
+      <rect x="0" y="0" width="62" height="26" rx="6" fill="#1E2029"/><text x="31" y="17" text-anchor="middle" fill="#FCD34D" font-size="11" font-weight="600" class="font-sans">Laravel</text>
+      <rect x="70" y="0" width="68" height="26" rx="6" fill="#1E2029"/><text x="104" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Filament</text>
+      <rect x="146" y="0" width="58" height="26" rx="6" fill="#1E2029"/><text x="175" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">MySQL</text>
+      <rect x="212" y="0" width="92" height="26" rx="6" fill="#1E2029"/><text x="258" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Tailwind CSS</text>
     </g>
   </g>
 
-  <!-- Project 2: VapePekanbaru Staff Portal -->
-  <g transform="translate(424, 132)">
-    <rect width="352" height="216" rx="16" fill="#141414" stroke="url(#cardBorder)" stroke-width="1.2"/>
-    <rect x="20" y="20" width="124" height="24" rx="12" fill="#D4A574" fill-opacity="0.15"/>
-    <text x="32" y="36" fill="#FCD34D" font-size="10.5" font-weight="600" class="font-sans">HR &amp; Operations</text>
-    <text x="332" y="36" text-anchor="end" fill="#A1A1AA" font-size="11" font-weight="500" class="font-sans">staff.vapekanbaru.com</text>
+  <!-- Card 2: VapePekanbaru Staff Portal -->
+  <g transform="translate(424, 124)">
+    <rect width="352" height="246" rx="16" fill="#13141A" stroke="url(#cardEdge)" stroke-width="1.2"/>
+    <rect x="16" y="16" width="320" height="54" rx="10" fill="#0B0C10" stroke="#FFFFFF" stroke-opacity="0.05"/>
+    <rect x="28" y="28" width="108" height="28" rx="6" fill="#D4A574" fill-opacity="0.15"/>
+    <text x="82" y="46" text-anchor="middle" fill="#FCD34D" font-size="10.5" font-weight="700" class="font-sans">HR &amp; Geofencing</text>
+    <!-- GPS Radar Rings -->
+    <circle cx="166" cy="42" r="9" fill="none" stroke="#34D399" stroke-opacity="0.4" stroke-width="1.2"/>
+    <circle cx="166" cy="42" r="3.5" fill="#34D399"/>
+    <text x="322" y="46" text-anchor="end" fill="#94A3B8" font-size="11" font-weight="600" class="font-sans">staff.vapekanbaru.com</text>
 
-    <text x="20" y="72" fill="#FFFFFF" font-size="19" font-weight="700" class="font-display">VapePekanbaru Staff Portal</text>
-    <text x="20" y="98" fill="#A1A1AA" font-size="12.5" class="font-sans">
+    <text x="20" y="100" fill="#FFFFFF" font-size="19" font-weight="700" class="font-display">VapePekanbaru Staff Portal</text>
+    <text x="20" y="126" fill="#A1A1AA" font-size="12.5" class="font-sans">
       <tspan x="20" dy="0">Geofenced GPS attendance and workforce suite</tspan>
       <tspan x="20" dy="19">with shift scheduling, leave approvals, daily task</tspan>
       <tspan x="20" dy="19">submissions, payroll processing, and leaderboards.</tspan>
     </text>
 
-    <g transform="translate(20, 168)">
-      <rect x="0" y="0" width="62" height="24" rx="6" fill="#1F1F22"/><text x="12" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Laravel</text>
-      <rect x="70" y="0" width="68" height="24" rx="6" fill="#1F1F22"/><text x="82" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Filament</text>
-      <rect x="146" y="0" width="66" height="24" rx="6" fill="#1F1F22"/><text x="158" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Livewire</text>
-      <rect x="220" y="0" width="84" height="24" rx="6" fill="#1F1F22"/><text x="232" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Geofencing</text>
+    <g transform="translate(20, 198)">
+      <rect x="0" y="0" width="62" height="26" rx="6" fill="#1E2029"/><text x="31" y="17" text-anchor="middle" fill="#FCD34D" font-size="11" font-weight="600" class="font-sans">Laravel</text>
+      <rect x="70" y="0" width="68" height="26" rx="6" fill="#1E2029"/><text x="104" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Filament</text>
+      <rect x="146" y="0" width="66" height="26" rx="6" fill="#1E2029"/><text x="179" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Livewire</text>
+      <rect x="220" y="0" width="84" height="26" rx="6" fill="#1E2029"/><text x="262" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">GPS Engine</text>
     </g>
   </g>
 
-  <!-- Project 3: Medical Check Up & Clinical HIS -->
-  <g transform="translate(800, 132)">
-    <rect width="352" height="216" rx="16" fill="#141414" stroke="url(#cardBorder)" stroke-width="1.2"/>
-    <rect x="20" y="20" width="136" height="24" rx="12" fill="#D4A574" fill-opacity="0.15"/>
-    <text x="32" y="36" fill="#FCD34D" font-size="10.5" font-weight="600" class="font-sans">Healthcare System</text>
-    <text x="332" y="36" text-anchor="end" fill="#A1A1AA" font-size="11" font-weight="500" class="font-sans">Enterprise HIS</text>
+  <!-- Card 3: Hospital MCU & Clinical HIS -->
+  <g transform="translate(800, 124)">
+    <rect width="352" height="246" rx="16" fill="#13141A" stroke="url(#cardEdge)" stroke-width="1.2"/>
+    <rect x="16" y="16" width="320" height="54" rx="10" fill="#0B0C10" stroke="#FFFFFF" stroke-opacity="0.05"/>
+    <rect x="28" y="28" width="118" height="28" rx="6" fill="#00ADD8" fill-opacity="0.15"/>
+    <text x="87" y="46" text-anchor="middle" fill="#38BDF8" font-size="10.5" font-weight="700" class="font-sans">Healthcare System</text>
+    <!-- Medical Pulse Waveform -->
+    <path d="M162 42 H174 L179 32 L185 52 L191 38 L195 42 H208" fill="none" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="322" y="46" text-anchor="end" fill="#94A3B8" font-size="11" font-weight="600" class="font-sans">Enterprise HIS</text>
 
-    <text x="20" y="72" fill="#FFFFFF" font-size="19" font-weight="700" class="font-display">Hospital MCU &amp; Clinical Portal</text>
-    <text x="20" y="98" fill="#A1A1AA" font-size="12.5" class="font-sans">
+    <text x="20" y="100" fill="#FFFFFF" font-size="19" font-weight="700" class="font-display">Hospital MCU &amp; Clinical Portal</text>
+    <text x="20" y="126" fill="#A1A1AA" font-size="12.5" class="font-sans">
       <tspan x="20" dy="0">Corporate medical examination platform featuring</tspan>
       <tspan x="20" dy="19">clinical workflows, digital signatures, hospital</tspan>
       <tspan x="20" dy="19">system integration, and standardized medical reports.</tspan>
     </text>
 
-    <g transform="translate(20, 168)">
-      <rect x="0" y="0" width="62" height="24" rx="6" fill="#1F1F22"/><text x="12" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Laravel</text>
-      <rect x="70" y="0" width="56" height="24" rx="6" fill="#1F1F22"/><text x="82" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Vue 3</text>
-      <rect x="134" y="0" width="62" height="24" rx="6" fill="#1F1F22"/><text x="146" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Inertia</text>
-      <rect x="204" y="0" width="66" height="24" rx="6" fill="#1F1F22"/><text x="216" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Octane</text>
+    <g transform="translate(20, 198)">
+      <rect x="0" y="0" width="62" height="26" rx="6" fill="#1E2029"/><text x="31" y="17" text-anchor="middle" fill="#FCD34D" font-size="11" font-weight="600" class="font-sans">Laravel</text>
+      <rect x="70" y="0" width="58" height="26" rx="6" fill="#1E2029"/><text x="99" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Vue 3</text>
+      <rect x="136" y="0" width="62" height="26" rx="6" fill="#1E2029"/><text x="167" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Inertia</text>
+      <rect x="206" y="0" width="68" height="26" rx="6" fill="#1E2029"/><text x="240" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Octane</text>
     </g>
   </g>
 
-  <!-- ROW 2 (Y = 372) -->
-  <!-- Project 4: Azwa Commerce & Analytics -->
-  <g transform="translate(48, 372)">
-    <rect width="352" height="206" rx="16" fill="#141414" stroke="url(#cardBorder)" stroke-width="1.2"/>
-    <rect x="20" y="20" width="126" height="24" rx="12" fill="#D4A574" fill-opacity="0.15"/>
-    <text x="32" y="36" fill="#FCD34D" font-size="10.5" font-weight="600" class="font-sans">Digital Commerce</text>
-    <text x="332" y="36" text-anchor="end" fill="#34D399" font-size="11" font-weight="600" class="font-sans">+40% Sales Efficiency</text>
+  <!-- ROW 2 (Y = 394) -->
+  <!-- Card 4: Azwa Storefront & Admin BI -->
+  <g transform="translate(48, 394)">
+    <rect width="352" height="246" rx="16" fill="#13141A" stroke="url(#cardEdge)" stroke-width="1.2"/>
+    <rect x="16" y="16" width="320" height="54" rx="10" fill="#0B0C10" stroke="#FFFFFF" stroke-opacity="0.05"/>
+    <rect x="28" y="28" width="114" height="28" rx="6" fill="#D4A574" fill-opacity="0.15"/>
+    <text x="85" y="46" text-anchor="middle" fill="#FCD34D" font-size="10.5" font-weight="700" class="font-sans">Digital Commerce</text>
+    <!-- Mini Bar Chart Graphic -->
+    <rect x="160" y="44" width="5" height="10" rx="1" fill="#D4A574"/>
+    <rect x="168" y="38" width="5" height="16" rx="1" fill="#D4A574"/>
+    <rect x="176" y="32" width="5" height="22" rx="1" fill="#34D399"/>
+    <text x="322" y="46" text-anchor="end" fill="#34D399" font-size="11" font-weight="700" class="font-sans">+40% Sales Efficiency</text>
 
-    <text x="20" y="72" fill="#FFFFFF" font-size="19" font-weight="700" class="font-display">Azwa Storefront &amp; Admin BI</text>
-    <text x="20" y="98" fill="#A1A1AA" font-size="12.5" class="font-sans">
+    <text x="20" y="100" fill="#FFFFFF" font-size="19" font-weight="700" class="font-display">Azwa Storefront &amp; Admin BI</text>
+    <text x="20" y="126" fill="#A1A1AA" font-size="12.5" class="font-sans">
       <tspan x="20" dy="0">Complete retail commerce ecosystem paired with</tspan>
       <tspan x="20" dy="19">a live executive dashboard for catalog control,</tspan>
       <tspan x="20" dy="19">order fulfillment, and visual sales analytics.</tspan>
     </text>
 
-    <g transform="translate(20, 160)">
-      <rect x="0" y="0" width="62" height="24" rx="6" fill="#1F1F22"/><text x="12" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Laravel</text>
-      <rect x="70" y="0" width="68" height="24" rx="6" fill="#1F1F22"/><text x="82" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Chart.js</text>
-      <rect x="146" y="0" width="84" height="24" rx="6" fill="#1F1F22"/><text x="158" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">DataTables</text>
-      <rect x="238" y="0" width="58" height="24" rx="6" fill="#1F1F22"/><text x="250" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">MySQL</text>
+    <g transform="translate(20, 198)">
+      <rect x="0" y="0" width="62" height="26" rx="6" fill="#1E2029"/><text x="31" y="17" text-anchor="middle" fill="#FCD34D" font-size="11" font-weight="600" class="font-sans">Laravel</text>
+      <rect x="70" y="0" width="68" height="26" rx="6" fill="#1E2029"/><text x="104" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Chart.js</text>
+      <rect x="146" y="0" width="84" height="26" rx="6" fill="#1E2029"/><text x="188" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">DataTables</text>
+      <rect x="238" y="0" width="58" height="26" rx="6" fill="#1E2029"/><text x="267" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">MySQL</text>
     </g>
   </g>
 
-  <!-- Project 5: Sikosan & Cooperative ERP Suite -->
-  <g transform="translate(424, 372)">
-    <rect width="352" height="206" rx="16" fill="#141414" stroke="url(#cardBorder)" stroke-width="1.2"/>
-    <rect x="20" y="20" width="136" height="24" rx="12" fill="#D4A574" fill-opacity="0.15"/>
-    <text x="32" y="36" fill="#FCD34D" font-size="10.5" font-weight="600" class="font-sans">ERP &amp; Information</text>
-    <text x="332" y="36" text-anchor="end" fill="#34D399" font-size="11" font-weight="600" class="font-sans">98% Collection Rate</text>
+  <!-- Card 5: Sikosan & Cooperative ERP -->
+  <g transform="translate(424, 394)">
+    <rect width="352" height="246" rx="16" fill="#13141A" stroke="url(#cardEdge)" stroke-width="1.2"/>
+    <rect x="16" y="16" width="320" height="54" rx="10" fill="#0B0C10" stroke="#FFFFFF" stroke-opacity="0.05"/>
+    <rect x="28" y="28" width="116" height="28" rx="6" fill="#D4A574" fill-opacity="0.15"/>
+    <text x="86" y="46" text-anchor="middle" fill="#FCD34D" font-size="10.5" font-weight="700" class="font-sans">ERP &amp; Occupancy</text>
+    <text x="322" y="46" text-anchor="end" fill="#34D399" font-size="11" font-weight="700" class="font-sans">98% Collection Rate</text>
 
-    <text x="20" y="72" fill="#FFFFFF" font-size="19" font-weight="700" class="font-display">Sikosan &amp; Cooperative ERP</text>
-    <text x="20" y="98" fill="#A1A1AA" font-size="12.5" class="font-sans">
+    <text x="20" y="100" fill="#FFFFFF" font-size="19" font-weight="700" class="font-display">Sikosan &amp; Cooperative ERP</text>
+    <text x="20" y="126" fill="#A1A1AA" font-size="12.5" class="font-sans">
       <tspan x="20" dy="0">Property occupancy management, room reservation</tspan>
       <tspan x="20" dy="19">scheduling, and cooperative inventory systems with</tspan>
       <tspan x="20" dy="19">automated financial reporting in PDF and Excel.</tspan>
     </text>
 
-    <g transform="translate(20, 160)">
-      <rect x="0" y="0" width="62" height="24" rx="6" fill="#1F1F22"/><text x="12" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Laravel</text>
-      <rect x="70" y="0" width="92" height="24" rx="6" fill="#1F1F22"/><text x="82" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">FullCalendar</text>
-      <rect x="170" y="0" width="68" height="24" rx="6" fill="#1F1F22"/><text x="182" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Chart.js</text>
-      <rect x="246" y="0" width="58" height="24" rx="6" fill="#1F1F22"/><text x="258" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">MySQL</text>
+    <g transform="translate(20, 198)">
+      <rect x="0" y="0" width="62" height="26" rx="6" fill="#1E2029"/><text x="31" y="17" text-anchor="middle" fill="#FCD34D" font-size="11" font-weight="600" class="font-sans">Laravel</text>
+      <rect x="70" y="0" width="92" height="26" rx="6" fill="#1E2029"/><text x="116" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">FullCalendar</text>
+      <rect x="170" y="0" width="68" height="26" rx="6" fill="#1E2029"/><text x="204" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Chart.js</text>
+      <rect x="246" y="0" width="58" height="26" rx="6" fill="#1E2029"/><text x="275" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">MySQL</text>
     </g>
   </g>
 
-  <!-- Project 6: Dhica Fashion & Sigalon Financial ERP -->
-  <g transform="translate(800, 372)">
-    <rect width="352" height="206" rx="16" fill="#141414" stroke="url(#cardBorder)" stroke-width="1.2"/>
-    <rect x="20" y="20" width="128" height="24" rx="12" fill="#D4A574" fill-opacity="0.15"/>
-    <text x="32" y="36" fill="#FCD34D" font-size="10.5" font-weight="600" class="font-sans">Finance &amp; Retail</text>
-    <text x="332" y="36" text-anchor="end" fill="#34D399" font-size="11" font-weight="600" class="font-sans">60% Faster Billing</text>
+  <!-- Card 6: Sigalon & Retail Inventory ERP -->
+  <g transform="translate(800, 394)">
+    <rect width="352" height="246" rx="16" fill="#13141A" stroke="url(#cardEdge)" stroke-width="1.2"/>
+    <rect x="16" y="16" width="320" height="54" rx="10" fill="#0B0C10" stroke="#FFFFFF" stroke-opacity="0.05"/>
+    <rect x="28" y="28" width="114" height="28" rx="6" fill="#D4A574" fill-opacity="0.15"/>
+    <text x="85" y="46" text-anchor="middle" fill="#FCD34D" font-size="10.5" font-weight="700" class="font-sans">Finance &amp; Retail</text>
+    <text x="322" y="46" text-anchor="end" fill="#34D399" font-size="11" font-weight="700" class="font-sans">60% Faster Billing</text>
 
-    <text x="20" y="72" fill="#FFFFFF" font-size="19" font-weight="700" class="font-display">Sigalon &amp; Retail Inventory</text>
-    <text x="20" y="98" fill="#A1A1AA" font-size="12.5" class="font-sans">
+    <text x="20" y="100" fill="#FFFFFF" font-size="19" font-weight="700" class="font-display">Sigalon &amp; Fashion Inventory</text>
+    <text x="20" y="126" fill="#A1A1AA" font-size="12.5" class="font-sans">
       <tspan x="20" dy="0">Distribution billing and retail stock tracking</tspan>
       <tspan x="20" dy="19">applications covering purchase orders, accounts</tspan>
       <tspan x="20" dy="19">receivable, customer ledgers, and monthly reports.</tspan>
     </text>
 
-    <g transform="translate(20, 160)">
-      <rect x="0" y="0" width="62" height="24" rx="6" fill="#1F1F22"/><text x="12" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Laravel</text>
-      <rect x="70" y="0" width="58" height="24" rx="6" fill="#1F1F22"/><text x="82" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">MySQL</text>
-      <rect x="136" y="0" width="76" height="24" rx="6" fill="#1F1F22"/><text x="148" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Bootstrap</text>
-      <rect x="220" y="0" width="88" height="24" rx="6" fill="#1F1F22"/><text x="232" y="16" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Excel Engine</text>
+    <g transform="translate(20, 198)">
+      <rect x="0" y="0" width="62" height="26" rx="6" fill="#1E2029"/><text x="31" y="17" text-anchor="middle" fill="#FCD34D" font-size="11" font-weight="600" class="font-sans">Laravel</text>
+      <rect x="70" y="0" width="58" height="26" rx="6" fill="#1E2029"/><text x="99" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">MySQL</text>
+      <rect x="136" y="0" width="76" height="26" rx="6" fill="#1E2029"/><text x="174" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Bootstrap</text>
+      <rect x="220" y="0" width="88" height="26" rx="6" fill="#1E2029"/><text x="264" y="17" text-anchor="middle" fill="#E4E4E7" font-size="11" font-weight="500" class="font-sans">Excel Engine</text>
     </g>
   </g>
 </svg>

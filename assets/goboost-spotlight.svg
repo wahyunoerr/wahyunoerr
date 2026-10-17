@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="100%" height="100%">
+  <defs>
+    <style>
+      .font-display { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .font-sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; }
+      @keyframes flowDash {
+        0% { stroke-dashoffset: 180; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .wire-anim { stroke-dasharray: 8 10; animation: flowDash 5s linear infinite; }
+    </style>
+    <linearGradient id="bgSpotlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080B11"/>
+      <stop offset="50%" stop-color="#0D131D"/>
+      <stop offset="100%" stop-color="#080B11"/>
+    </linearGradient>
+    <linearGradient id="cyanText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ADD8"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#FCD34D"/>
+    </linearGradient>
+    <linearGradient id="spotBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ADD8" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#D4A574" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="330" rx="22" fill="url(#bgSpotlight)"/>
+  <rect x="1" y="1" width="1198" height="328" rx="21" fill="none" stroke="url(#spotBorder)" stroke-width="1.5"/>
+
+  <!-- Header Row -->
+  <g transform="translate(48, 36)">
+    <rect x="0" y="0" width="192" height="26" rx="13" fill="#00ADD8" fill-opacity="0.14" stroke="#00ADD8" stroke-opacity="0.4"/>
+    <text x="96" y="17" text-anchor="middle" fill="#38BDF8" font-size="10.5" font-weight="700" letter-spacing="0.7" class="font-sans">FLAGSHIP OPEN SOURCE</text>
+
+    <text x="0" y="60" fill="#FFFFFF" font-size="28" font-weight="800" class="font-display">Go Boost <tspan fill="url(#cyanText)">Native AI &amp; MCP Suite for Go</tspan></text>
+    <text x="1104" y="56" text-anchor="end" fill="#94A3B8" font-size="13" font-weight="500" class="font-sans">Pure Go standard library AST engine for Claude Code, Cursor, Antigravity, Copilot &amp; Windsurf.</text>
+  </g>
+
+  <!-- 4 Domain Architecture Cards (Y = 120) -->
+  <!-- Pillar 1: AST & Architecture -->
+  <g transform="translate(48, 120)">
+    <rect width="260" height="172" rx="16" fill="#0F1622" stroke="#00ADD8" stroke-opacity="0.28" stroke-width="1.2"/>
+    <rect x="20" y="18" width="34" height="34" rx="9" fill="#00ADD8" fill-opacity="0.15"/>
+    <path d="M31 30 L26 35 L31 40 M43 30 L48 35 L43 40 M39 28 L35 42" fill="none" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="66" y="33" fill="#FFFFFF" font-size="14.5" font-weight="700" class="font-display">Static AST Core</text>
+    <text x="66" y="49" fill="#38BDF8" font-size="11" font-weight="600" class="font-sans">6 Native Tools</text>
+
+    <rect x="20" y="66" width="106" height="24" rx="6" fill="#162030"/><text x="73" y="82" text-anchor="middle" fill="#E2E8F0" font-size="11" class="font-mono">ast_inspect</text>
+    <rect x="134" y="66" width="106" height="24" rx="6" fill="#162030"/><text x="187" y="82" text-anchor="middle" fill="#E2E8F0" font-size="11" class="font-mono">route_list</text>
+    <rect x="20" y="96" width="106" height="24" rx="6" fill="#162030"/><text x="73" y="112" text-anchor="middle" fill="#E2E8F0" font-size="11" class="font-mono">app_info</text>
+    <rect x="134" y="96" width="106" height="24" rx="6" fill="#162030"/><text x="187" y="112" text-anchor="middle" fill="#E2E8F0" font-size="11" class="font-mono">go_doc</text>
+    <rect x="20" y="126" width="220" height="24" rx="6" fill="#162030"/><text x="130" y="142" text-anchor="middle" fill="#94A3B8" font-size="10.5" class="font-mono">find_implementations · deadcode</text>
+  </g>
+
+  <!-- Pillar 2: Concurrency & Security -->
+  <g transform="translate(329, 120)">
+    <rect width="260" height="172" rx="16" fill="#0F1622" stroke="#FCD34D" stroke-opacity="0.28" stroke-width="1.2"/>
+    <rect x="20" y="18" width="34" height="34" rx="9" fill="#FCD34D" fill-opacity="0.14"/>
+    <path d="M37 25 L46 29 V35 C46 41 42 45 37 47 C32 45 28 41 28 35 V29 Z" fill="none" stroke="#FCD34D" stroke-width="1.8" stroke-linejoin="round"/>
+    <text x="66" y="33" fill="#FFFFFF" font-size="14.5" font-weight="700" class="font-display">Concurrency &amp; Safety</text>
+    <text x="66" y="49" fill="#FCD34D" font-size="11" font-weight="600" class="font-sans">Race, Leak &amp; SARIF Audit</text>
+
+    <rect x="20" y="66" width="220" height="24" rx="6" fill="#162030"/><text x="130" y="82" text-anchor="middle" fill="#FCD34D" font-size="11" font-weight="600" class="font-mono">concurrency_check</text>
+    <rect x="20" y="96" width="106" height="24" rx="6" fill="#162030"/><text x="73" y="112" text-anchor="middle" fill="#E2E8F0" font-size="11" class="font-mono">security_scan</text>
+    <rect x="134" y="96" width="106" height="24" rx="6" fill="#162030"/><text x="187" y="112" text-anchor="middle" fill="#E2E8F0" font-size="11" class="font-mono">code_check</text>
+    <rect x="20" y="126" width="220" height="24" rx="6" fill="#162030"/><text x="130" y="142" text-anchor="middle" fill="#94A3B8" font-size="10.5" class="font-sans">Goroutine Leaks · Mutex · SQLi · TLS</text>
+  </g>
+
+  <!-- Pillar 3: Database & Schema Diff -->
+  <g transform="translate(610, 120)">
+    <rect width="260" height="172" rx="16" fill="#0F1622" stroke="#34D399" stroke-opacity="0.28" stroke-width="1.2"/>
+    <rect x="20" y="18" width="34" height="34" rx="9" fill="#34D399" fill-opacity="0.14"/>
+    <ellipse cx="37" cy="29" rx="9" ry="4" fill="none" stroke="#34D399" stroke-width="1.8"/>
+    <path d="M28 29 V41 C28 43.2 32 45 37 45 C42 45 46 43.2 46 41 V29" fill="none" stroke="#34D399" stroke-width="1.8"/>
+    <text x="66" y="33" fill="#FFFFFF" font-size="14.5" font-weight="700" class="font-display">Database &amp; Schema</text>
+    <text x="66" y="49" fill="#34D399" font-size="11" font-weight="600" class="font-sans">5 Read Only &amp; Diff Tools</text>
+
+    <rect x="20" y="66" width="106" height="24" rx="6" fill="#162030"/><text x="73" y="82" text-anchor="middle" fill="#E2E8F0" font-size="11" class="font-mono">db_schema</text>
+    <rect x="134" y="66" width="106" height="24" rx="6" fill="#162030"/><text x="187" y="82" text-anchor="middle" fill="#E2E8F0" font-size="11" class="font-mono">db_query</text>
+    <rect x="20" y="96" width="220" height="24" rx="6" fill="#162030"/><text x="130" y="112" text-anchor="middle" fill="#34D399" font-size="11" font-weight="600" class="font-mono">schema_struct_diff</text>
+    <rect x="20" y="126" width="220" height="24" rx="6" fill="#162030"/><text x="130" y="142" text-anchor="middle" fill="#94A3B8" font-size="10.5" class="font-mono">migration_generate · db_conns</text>
+  </g>
+
+  <!-- Pillar 4: Testing, Mocks & Diagnostics -->
+  <g transform="translate(892, 120)">
+    <rect width="260" height="172" rx="16" fill="#0F1622" stroke="#A78BFA" stroke-opacity="0.28" stroke-width="1.2"/>
+    <rect x="20" y="18" width="34" height="34" rx="9" fill="#A78BFA" fill-opacity="0.14"/>
+    <path d="M29 36 L34 41 L45 29" fill="none" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="66" y="33" fill="#FFFFFF" font-size="14.5" font-weight="700" class="font-display">Testing &amp; Diagnostics</text>
+    <text x="66" y="49" fill="#A78BFA" font-size="11" font-weight="600" class="font-sans">7 Scaffolding &amp; Run Tools</text>
+
+    <rect x="20" y="66" width="106" height="24" rx="6" fill="#162030"/><text x="73" y="82" text-anchor="middle" fill="#E2E8F0" font-size="11" class="font-mono">mock_generate</text>
+    <rect x="134" y="66" width="106" height="24" rx="6" fill="#162030"/><text x="187" y="82" text-anchor="middle" fill="#E2E8F0" font-size="11" class="font-mono">test_runner</text>
+    <rect x="20" y="96" width="106" height="24" rx="6" fill="#162030"/><text x="73" y="112" text-anchor="middle" fill="#E2E8F0" font-size="11" class="font-mono">diagnose_run</text>
+    <rect x="134" y="96" width="106" height="24" rx="6" fill="#162030"/><text x="187" y="112" text-anchor="middle" fill="#E2E8F0" font-size="11" class="font-mono">bench_runner</text>
+    <rect x="20" y="126" width="220" height="24" rx="6" fill="#162030"/><text x="130" y="142" text-anchor="middle" fill="#94A3B8" font-size="10.5" class="font-mono">openapi_generate · read_logs</text>
+  </g>
+</svg>
