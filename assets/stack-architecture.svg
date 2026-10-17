@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <style>
+      .font-display { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .font-sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    </style>
+    <linearGradient id="bgStack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#121212"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A574"/>
+      <stop offset="50%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#D4A574"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="360" rx="22" fill="url(#bgStack)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="21" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1.2"/>
+
+  <!-- Section Header -->
+  <g transform="translate(48, 40)">
+    <rect x="0" y="0" width="154" height="26" rx="13" fill="#D4A574" fill-opacity="0.12" stroke="#D4A574" stroke-opacity="0.3"/>
+    <text x="18" y="17.5" fill="#FCD34D" font-size="11" font-weight="600" letter-spacing="0.8" class="font-sans">TECHNICAL STACK</text>
+    <text x="0" y="62" fill="#FFFFFF" font-size="28" font-weight="700" class="font-display">Technologies &amp; Tools</text>
+    <text x="275" y="62" fill="url(#goldAccent)" font-size="28" font-weight="700" class="font-display">I Work With</text>
+    <text x="520" y="57" fill="#A1A1AA" font-size="13.5" font-weight="400" class="font-sans">Core frameworks, databases, and deployment tools used across daily production systems.</text>
+  </g>
+
+  <!-- 4 Pillar Columns (Y = 128) -->
+  <!-- Column 1: Backend & Frameworks -->
+  <g transform="translate(48, 128)">
+    <rect width="260" height="190" rx="16" fill="#141414" stroke="#FFFFFF" stroke-opacity="0.07"/>
+    <circle cx="28" cy="30" r="6" fill="#D4A574"/>
+    <text x="44" y="35" fill="#FFFFFF" font-size="15.5" font-weight="700" class="font-display">Backend Architecture</text>
+    <line x1="20" y1="52" x2="240" y2="52" stroke="#FFFFFF" stroke-opacity="0.06"/>
+
+    <rect x="20" y="68" width="104" height="30" rx="8" fill="#1F1F22"/><text x="34" y="87" fill="#FCD34D" font-size="12" font-weight="600" class="font-sans">Laravel</text>
+    <rect x="132" y="68" width="108" height="30" rx="8" fill="#1F1F22"/><text x="146" y="87" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">PHP 8</text>
+
+    <rect x="20" y="106" width="104" height="30" rx="8" fill="#1F1F22"/><text x="34" y="125" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">Filament</text>
+    <rect x="132" y="106" width="108" height="30" rx="8" fill="#1F1F22"/><text x="146" y="125" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">Livewire</text>
+
+    <rect x="20" y="144" width="104" height="30" rx="8" fill="#1F1F22"/><text x="34" y="163" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">Go (Golang)</text>
+    <rect x="132" y="144" width="108" height="30" rx="8" fill="#1F1F22"/><text x="146" y="163" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">REST API</text>
+  </g>
+
+  <!-- Column 2: Frontend & Reactive UI -->
+  <g transform="translate(329, 128)">
+    <rect width="260" height="190" rx="16" fill="#141414" stroke="#FFFFFF" stroke-opacity="0.07"/>
+    <circle cx="28" cy="30" r="6" fill="#FCD34D"/>
+    <text x="44" y="35" fill="#FFFFFF" font-size="15.5" font-weight="700" class="font-display">Frontend &amp; Interface</text>
+    <line x1="20" y1="52" x2="240" y2="52" stroke="#FFFFFF" stroke-opacity="0.06"/>
+
+    <rect x="20" y="68" width="104" height="30" rx="8" fill="#1F1F22"/><text x="34" y="87" fill="#FCD34D" font-size="12" font-weight="600" class="font-sans">Vue.js 3</text>
+    <rect x="132" y="68" width="108" height="30" rx="8" fill="#1F1F22"/><text x="146" y="87" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">Tailwind CSS</text>
+
+    <rect x="20" y="106" width="104" height="30" rx="8" fill="#1F1F22"/><text x="34" y="125" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">Alpine.js</text>
+    <rect x="132" y="106" width="108" height="30" rx="8" fill="#1F1F22"/><text x="146" y="125" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">JavaScript</text>
+
+    <rect x="20" y="144" width="104" height="30" rx="8" fill="#1F1F22"/><text x="34" y="163" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">Bootstrap</text>
+    <rect x="132" y="144" width="108" height="30" rx="8" fill="#1F1F22"/><text x="146" y="163" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">HTML5 &amp; CSS3</text>
+  </g>
+
+  <!-- Column 3: Data, Analytics & Reporting -->
+  <g transform="translate(610, 128)">
+    <rect width="260" height="190" rx="16" fill="#141414" stroke="#FFFFFF" stroke-opacity="0.07"/>
+    <circle cx="28" cy="30" r="6" fill="#D4A574"/>
+    <text x="44" y="35" fill="#FFFFFF" font-size="15.5" font-weight="700" class="font-display">Data &amp; Reporting</text>
+    <line x1="20" y1="52" x2="240" y2="52" stroke="#FFFFFF" stroke-opacity="0.06"/>
+
+    <rect x="20" y="68" width="104" height="30" rx="8" fill="#1F1F22"/><text x="34" y="87" fill="#FCD34D" font-size="12" font-weight="600" class="font-sans">MySQL</text>
+    <rect x="132" y="68" width="108" height="30" rx="8" fill="#1F1F22"/><text x="146" y="87" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">PostgreSQL</text>
+
+    <rect x="20" y="106" width="104" height="30" rx="8" fill="#1F1F22"/><text x="34" y="125" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">SQLite</text>
+    <rect x="132" y="106" width="108" height="30" rx="8" fill="#1F1F22"/><text x="146" y="125" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">Chart.js</text>
+
+    <rect x="20" y="144" width="104" height="30" rx="8" fill="#1F1F22"/><text x="34" y="163" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">FullCalendar</text>
+    <rect x="132" y="144" width="108" height="30" rx="8" fill="#1F1F22"/><text x="146" y="163" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">PDF &amp; Excel</text>
+  </g>
+
+  <!-- Column 4: DevOps & Daily Environment -->
+  <g transform="translate(892, 128)">
+    <rect width="260" height="190" rx="16" fill="#141414" stroke="#FFFFFF" stroke-opacity="0.07"/>
+    <circle cx="28" cy="30" r="6" fill="#FCD34D"/>
+    <text x="44" y="35" fill="#FFFFFF" font-size="15.5" font-weight="700" class="font-display">Environment &amp; Ops</text>
+    <line x1="20" y1="52" x2="240" y2="52" stroke="#FFFFFF" stroke-opacity="0.06"/>
+
+    <rect x="20" y="68" width="104" height="30" rx="8" fill="#1F1F22"/><text x="34" y="87" fill="#FCD34D" font-size="12" font-weight="600" class="font-sans">Linux VPS</text>
+    <rect x="132" y="68" width="108" height="30" rx="8" fill="#1F1F22"/><text x="146" y="87" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">Nginx</text>
+
+    <rect x="20" y="106" width="104" height="30" rx="8" fill="#1F1F22"/><text x="34" y="125" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">Git &amp; GitHub</text>
+    <rect x="132" y="106" width="108" height="30" rx="8" fill="#1F1F22"/><text x="146" y="125" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">Vite &amp; NPM</text>
+
+    <rect x="20" y="144" width="104" height="30" rx="8" fill="#1F1F22"/><text x="34" y="163" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">Composer</text>
+    <rect x="132" y="144" width="108" height="30" rx="8" fill="#1F1F22"/><text x="146" y="163" fill="#E4E4E7" font-size="12" font-weight="500" class="font-sans">Figma &amp; API</text>
+  </g>
+</svg>

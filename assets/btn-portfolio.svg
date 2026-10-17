@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 54" width="288" height="54">
+  <defs>
+    <style>
+      .font-sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    </style>
+    <linearGradient id="btnGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A574"/>
+      <stop offset="50%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#D4A574"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="286" height="52" rx="14" fill="url(#btnGold)" stroke="#FCD34D" stroke-opacity="0.65" stroke-width="1.2"/>
+  <rect x="12" y="11" width="32" height="32" rx="9" fill="#0A0A0A" fill-opacity="0.14"/>
+  <path d="M21 27 A7 7 0 1 0 35 27 A7 7 0 1 0 21 27 M21 27 H35 M28 20 C30 22 30 32 28 34 C26 32 26 22 28 20" fill="none" stroke="#0A0A0A" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="56" y="24" fill="#27272A" font-size="10" font-weight="600" letter-spacing="0.5" class="font-sans">OFFICIAL PORTFOLIO</text>
+  <text x="56" y="40" fill="#0A0A0A" font-size="13.5" font-weight="700" class="font-sans">wahyunoerr.github.io</text>
+</svg>

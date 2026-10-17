@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="100%" height="100%">
+  <defs>
+    <style>
+      .font-display { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .font-sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(1.5); }
+      }
+      @keyframes floatCard {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes floatBadge {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(5px); }
+      }
+      @keyframes drawLine {
+        0% { stroke-dashoffset: 360; }
+        50% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 360; }
+      }
+      .pulse-ring { animation: pulseDot 2.4s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      .float-main { animation: floatCard 6s ease-in-out infinite; }
+      .float-sub { animation: floatBadge 5s ease-in-out infinite; }
+      .chart-line { stroke-dasharray: 360; animation: drawLine 10s ease-in-out infinite; }
+    </style>
+
+    <linearGradient id="bgCanvas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="55%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A574"/>
+      <stop offset="50%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#D4A574"/>
+    </linearGradient>
+
+    <linearGradient id="goldSubtle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A574" stop-opacity="0.28"/>
+      <stop offset="50%" stop-color="#D4A574" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FCD34D" stop-opacity="0.22"/>
+    </linearGradient>
+
+    <linearGradient id="chartFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4A574" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#D4A574" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <radialGradient id="ambientLeft" cx="18%" cy="28%" r="48%">
+      <stop offset="0%" stop-color="#D4A574" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#0A0A0A" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="ambientRight" cx="80%" cy="55%" r="42%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#0A0A0A" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="dotGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1200" height="440" rx="22" fill="url(#bgCanvas)"/>
+  <rect width="1200" height="440" rx="22" fill="url(#ambientLeft)"/>
+  <rect width="1200" height="440" rx="22" fill="url(#ambientRight)"/>
+  <rect width="1200" height="440" rx="22" fill="url(#dotGrid)"/>
+  <rect x="1" y="1" width="1198" height="438" rx="21" fill="none" stroke="url(#goldSubtle)" stroke-width="1.5"/>
+
+  <!-- Left Column: Identity & Value Proposition -->
+  <g transform="translate(56, 52)">
+    <!-- Availability Pill -->
+    <rect x="0" y="0" width="248" height="32" rx="16" fill="#D4A574" fill-opacity="0.1" stroke="#D4A574" stroke-opacity="0.3" stroke-width="1"/>
+    <circle cx="18" cy="16" r="5" fill="#D4A574" class="pulse-ring"/>
+    <circle cx="18" cy="16" r="3.5" fill="#FCD34D"/>
+    <text x="34" y="20.5" fill="#E7C69E" font-size="12" font-weight="600" letter-spacing="0.4" class="font-sans">Open to Work &amp; Collaboration</text>
+
+    <!-- Main Heading -->
+    <text x="0" y="88" fill="#FFFFFF" font-size="48" font-weight="800" letter-spacing="-0.8" class="font-display">Wahyu Nur</text>
+    <text x="0" y="138" fill="url(#goldGrad)" font-size="38" font-weight="700" letter-spacing="-0.5" class="font-display">Full-Stack Web Developer</text>
+
+    <!-- Bio Paragraph (Zero Dashes) -->
+    <text x="0" y="180" fill="#A1A1AA" font-size="15.5" font-weight="400" class="font-sans">
+      <tspan x="0" dy="0">Building scalable enterprise web applications, logistics &amp; HR platforms,</tspan>
+      <tspan x="0" dy="24">and high-performance business systems with</tspan>
+      <tspan fill="#FFFFFF" font-weight="600"> Laravel</tspan><tspan fill="#A1A1AA">,</tspan>
+      <tspan fill="#FFFFFF" font-weight="600"> Vue.js</tspan><tspan fill="#A1A1AA">, and</tspan>
+      <tspan fill="#FFFFFF" font-weight="600"> Go</tspan><tspan fill="#A1A1AA">.</tspan>
+      <tspan x="0" dy="24">Focused on clean architecture, reliability, and measurable business impact.</tspan>
+    </text>
+
+    <!-- 3 Key Highlights Row -->
+    <g transform="translate(0, 262)">
+      <!-- Card 1 -->
+      <rect x="0" y="0" width="186" height="74" rx="14" fill="#141414" fill-opacity="0.9" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+      <rect x="14" y="18" width="38" height="38" rx="10" fill="#D4A574" fill-opacity="0.14"/>
+      <path d="M27 37 L31 41 L40 31" fill="none" stroke="#FCD34D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="64" y="34" fill="#FFFFFF" font-size="18" font-weight="700" class="font-display">3+ Years</text>
+      <text x="64" y="53" fill="#71717A" font-size="11.5" font-weight="500" class="font-sans">Production Experience</text>
+
+      <!-- Card 2 -->
+      <rect x="200" y="0" width="196" height="74" rx="14" fill="#141414" fill-opacity="0.9" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+      <rect x="214" y="18" width="38" height="38" rx="10" fill="#D4A574" fill-opacity="0.14"/>
+      <path d="M226 31 H240 M226 37 H240 M226 43 H235" fill="none" stroke="#FCD34D" stroke-width="2" stroke-linecap="round"/>
+      <text x="264" y="34" fill="#FFFFFF" font-size="18" font-weight="700" class="font-display">10+ Systems</text>
+      <text x="264" y="53" fill="#71717A" font-size="11.5" font-weight="500" class="font-sans">Delivered to Production</text>
+
+      <!-- Card 3 -->
+      <rect x="410" y="0" width="196" height="74" rx="14" fill="#141414" fill-opacity="0.9" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+      <rect x="424" y="18" width="38" height="38" rx="10" fill="#D4A574" fill-opacity="0.14"/>
+      <circle cx="443" cy="37" r="7" fill="none" stroke="#FCD34D" stroke-width="2"/>
+      <circle cx="443" cy="37" r="2" fill="#FCD34D"/>
+      <text x="474" y="34" fill="#FFFFFF" font-size="18" font-weight="700" class="font-display">Pekanbaru, ID</text>
+      <text x="474" y="53" fill="#71717A" font-size="11.5" font-weight="500" class="font-sans">Remote &amp; On-Site Ready</text>
+    </g>
+  </g>
+
+  <!-- Right Column: Interactive Layered Product Architecture Preview -->
+  <g transform="translate(700, 48)">
+    <!-- Soft Glow Behind Preview -->
+    <rect x="20" y="20" width="420" height="300" rx="24" fill="#D4A574" fill-opacity="0.06"/>
+
+    <!-- Main Floating Application Window -->
+    <g class="float-main">
+      <rect x="0" y="12" width="444" height="296" rx="18" fill="#141414" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.2"/>
+
+      <!-- Window Header Bar -->
+      <rect x="0" y="12" width="444" height="40" rx="18" fill="#1A1A1A"/>
+      <rect x="0" y="38" width="444" height="14" fill="#1A1A1A"/>
+      <line x1="0" y1="52" x2="444" y2="52" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="1"/>
+      <circle cx="22" cy="32" r="5" fill="#3F3F46"/>
+      <circle cx="38" cy="32" r="5" fill="#3F3F46"/>
+      <circle cx="54" cy="32" r="5" fill="#D4A574"/>
+      <text x="76" y="36" fill="#A1A1AA" font-size="11.5" font-weight="500" class="font-sans">Enterprise System Architecture</text>
+      <rect x="348" y="22" width="78" height="20" rx="10" fill="#D4A574" fill-opacity="0.15"/>
+      <text x="364" y="35.5" fill="#FCD34D" font-size="10.5" font-weight="600" class="font-sans">Production</text>
+
+      <!-- Mini KPI Row inside Preview -->
+      <rect x="20" y="68" width="126" height="62" rx="10" fill="#0F0F0F" stroke="#FFFFFF" stroke-opacity="0.06"/>
+      <text x="32" y="88" fill="#71717A" font-size="10.5" font-weight="500" class="font-sans">Order Fulfillment</text>
+      <text x="32" y="114" fill="#FFFFFF" font-size="18" font-weight="700" class="font-display">98.4%</text>
+      <text x="92" y="113" fill="#34D399" font-size="10.5" font-weight="600" class="font-sans">+12%</text>
+
+      <rect x="158" y="68" width="126" height="62" rx="10" fill="#0F0F0F" stroke="#FFFFFF" stroke-opacity="0.06"/>
+      <text x="170" y="88" fill="#71717A" font-size="10.5" font-weight="500" class="font-sans">Active Inventory</text>
+      <text x="170" y="114" fill="#FFFFFF" font-size="18" font-weight="700" class="font-display">500+ SKU</text>
+
+      <rect x="296" y="68" width="128" height="62" rx="10" fill="#0F0F0F" stroke="#FFFFFF" stroke-opacity="0.06"/>
+      <text x="308" y="88" fill="#71717A" font-size="10.5" font-weight="500" class="font-sans">Conflict Reduction</text>
+      <text x="308" y="114" fill="#FCD34D" font-size="18" font-weight="700" class="font-display">95.0%</text>
+
+      <!-- Animated Performance & Operations Chart Area -->
+      <rect x="20" y="144" width="404" height="142" rx="12" fill="#0F0F0F" stroke="#FFFFFF" stroke-opacity="0.06"/>
+      <text x="36" y="168" fill="#E4E4E7" font-size="12" font-weight="600" class="font-sans">Real-Time Operations &amp; System Throughput</text>
+      <text x="348" y="168" fill="#D4A574" font-size="11" font-weight="600" class="font-sans">Live Telemetry</text>
+
+      <!-- Grid Lines -->
+      <line x1="36" y1="190" x2="404" y2="190" stroke="#FFFFFF" stroke-opacity="0.04" stroke-dasharray="3 3"/>
+      <line x1="36" y1="222" x2="404" y2="222" stroke="#FFFFFF" stroke-opacity="0.04" stroke-dasharray="3 3"/>
+      <line x1="36" y1="254" x2="404" y2="254" stroke="#FFFFFF" stroke-opacity="0.04" stroke-dasharray="3 3"/>
+
+      <!-- Area & Animated Gold Curve -->
+      <path d="M36 254 C85 246, 120 212, 165 218 C210 224, 245 186, 295 192 C340 196, 370 174, 404 178 L404 268 L36 268 Z" fill="url(#chartFill)"/>
+      <path d="M36 254 C85 246, 120 212, 165 218 C210 224, 245 186, 295 192 C340 196, 370 174, 404 178" fill="none" stroke="url(#goldGrad)" stroke-width="2.8" stroke-linecap="round" class="chart-line"/>
+
+      <circle cx="165" cy="218" r="4" fill="#141414" stroke="#FCD34D" stroke-width="2.2"/>
+      <circle cx="295" cy="192" r="4" fill="#141414" stroke="#FCD34D" stroke-width="2.2"/>
+      <circle cx="404" cy="178" r="4.5" fill="#FCD34D"/>
+    </g>
+
+    <!-- Floating Bottom Overlay Pill -->
+    <g class="float-sub" transform="translate(36, 292)">
+      <rect x="0" y="0" width="372" height="46" rx="14" fill="#1C1C1E" stroke="#D4A574" stroke-opacity="0.4" stroke-width="1.2"/>
+      <circle cx="24" cy="23" r="8" fill="#D4A574" fill-opacity="0.2"/>
+      <circle cx="24" cy="23" r="3.5" fill="#FCD34D"/>
+      <text x="44" y="27.5" fill="#FFFFFF" font-size="12.5" font-weight="600" class="font-sans">Core Stack:</text>
+      <text x="120" y="27.5" fill="#E7C69E" font-size="12.5" font-weight="500" class="font-sans">Laravel · Filament · Vue.js · Livewire · Go</text>
+    </g>
+  </g>
+</svg>
